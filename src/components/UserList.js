@@ -23,16 +23,18 @@ const UserTile = ({ id, first_name, last_name, email, gender }) => {
       <p>
         <strong>Gender:</strong> {gender}
       </p>
-      <p>
-        <Link to={`/users/${id}`}>Go to user</Link>
-      </p>
+      <div className="user-list-preview-links">
+        <p>
+          <Link to={`/users/${id}`}>Go to user</Link>
+        </p>
 
-      <p>
-        <Link to={`/users/delete/${id}`}>Delete user</Link>
-      </p>
-      <p>
-        <Link to={`/users/update/${id}`}>Update user</Link>
-      </p>
+        <p>
+          <Link to={`/users/delete/${id}`}>Delete user</Link>
+        </p>
+        <p>
+          <Link to={`/users/update/${id}`}>Update user</Link>
+        </p>
+      </div>
     </div>
   );
 };

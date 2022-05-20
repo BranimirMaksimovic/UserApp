@@ -2,8 +2,12 @@
 
 * {
   margin: 0;
+  padding: 0;
   font-family: "Quicksand";
   color: #333;
+}
+.App {
+  background: #161623;
 }
 
 .navbar {
@@ -13,6 +17,8 @@
   max-width: 600px;
   margin: 0 auto;
   border-bottom: 1px solid #248850;
+  background-color: rgb(238, 235, 235);
+  border-radius: 10px;
 }
 
 .navbar h1 {
@@ -30,9 +36,13 @@
   color: #f1356d;
 }
 .content {
-  max-width: 600px;
+  max-width: 300px;
   margin: 40px auto;
   padding: 20px;
+  background-color: rgb(238, 235, 235);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .user-list-preview {
   padding: 10px 16px;
@@ -47,4 +57,14 @@
   font-size: 20px;
   color: #f1356d;
   margin-bottom: 8px;
+}
+
+.users {
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.user-list-preview-links {
+  margin-right: 70%;
+  text-align: left;
 }
